@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Profile from "@/components/Profile.vue";
+import ShoppingList from "@/components/ShoppingList.vue";
 </script>
 
 <template>

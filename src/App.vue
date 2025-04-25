@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/your-bar">Your Bar</RouterLink>
-        <RouterLink to="/cocktail-suggestions">Cocktail Suggestions</RouterLink>
+        <RouterLink to="/your-shopping-list">Your Shopping List</RouterLink>
         <RouterLink to="/login">Login</RouterLink>
         <RouterLink to="/Profile">Profile</RouterLink>
       </nav>
@@ -25,10 +25,6 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 nav {
   width: 100%;
