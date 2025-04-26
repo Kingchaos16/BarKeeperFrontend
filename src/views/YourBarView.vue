@@ -6,12 +6,20 @@ import DrinkDetail from "@/components/DrinkDetail.vue";
 import EditDrinks from "@/components/EditDrinks.vue";
 import {ref} from "vue";
 
+
+const isLoggedIn = ref(true);
+function toggleLogin() {
+  isLoggedIn.value = !isLoggedIn.value;
+}
 </script>
 
 <template>
   <router-link to="/add-drinks">
     <button>Add Drinks</button>
   </router-link>
+  <p v-if="isLoggedIn">Welcome back!</p>
+  <p v-else>Please log in.</p>
+  <button @click="toggleLogin">Toggle Login</button>
 
 </template>
 

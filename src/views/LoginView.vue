@@ -31,9 +31,7 @@ function toggleLogin() {
     <button @click="showRegister">Register</button>
 
 
-      <p v-if="isLoggedIn">Welcome back!</p>
-      <p v-else>Please log in.</p>
-      <button @click="toggleLogin">Toggle Login</button>
+     
 
 
   </main>
