@@ -13,8 +13,12 @@ function showRegister() {
 
 function triggerLoginAction() {
   if (loginRef.value) {
-    loginRef.value.loginAction(); // Call the method in Login.vue
+    loginRef.value.loginAction();
   }
+}
+const isLoggedIn = ref(true);
+function toggleLogin() {
+  isLoggedIn.value = !isLoggedIn.value;
 }
 </script>
 
@@ -25,6 +29,12 @@ function triggerLoginAction() {
 
     <button @click="triggerLoginAction">Login</button>
     <button @click="showRegister">Register</button>
+
+
+      <p v-if="isLoggedIn">Welcome back!</p>
+      <p v-else>Please log in.</p>
+      <button @click="toggleLogin">Toggle Login</button>
+
 
   </main>
 </template>
