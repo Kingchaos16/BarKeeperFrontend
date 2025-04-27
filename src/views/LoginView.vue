@@ -28,10 +28,10 @@ function toggleLogin() {
     <Register v-show="currentView === 'Register'" />
 
     <button @click="triggerLoginAction">Login</button>
-    <button @click="showRegister">Register</button>
 
 
-     
+
+
 
 
   </main>
